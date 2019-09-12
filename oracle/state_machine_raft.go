@@ -6,10 +6,10 @@ import (
 	"github.com/cockroachdb/cockroach/pkg/util/protoutil"
 	"github.com/scaledata/etcd/snap"
 
-	"github.com/rubrikinc/kronos/kronosutil"
-	"github.com/rubrikinc/kronos/kronosutil/log"
-	"github.com/rubrikinc/kronos/metadata"
-	"github.com/rubrikinc/kronos/pb"
+	"github.com/elliotcourant/kronos/kronosutil"
+	"github.com/elliotcourant/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/metadata"
+	"github.com/elliotcourant/kronos/pb"
 )
 
 // RaftConfig is used to initialize a raft based on the given parameters

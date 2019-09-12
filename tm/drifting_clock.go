@@ -6,8 +6,8 @@ import (
 
 	"github.com/cockroachdb/cockroach/pkg/util/syncutil"
 
-	"github.com/rubrikinc/kronos/kronosutil/log"
-	"github.com/rubrikinc/kronos/pb"
+	"github.com/elliotcourant/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/pb"
 )
 
 // DriftingClock is an implementation of Clock which can be used to simulate

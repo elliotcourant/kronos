@@ -12,7 +12,7 @@ import (
 	"github.com/cockroachdb/cockroach/pkg/util/protoutil"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/rubrikinc/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/kronosutil/log"
 )
 
 const (

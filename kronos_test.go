@@ -8,9 +8,9 @@ import (
 	"github.com/cockroachdb/cockroach/pkg/util/leaktest"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/rubrikinc/kronos/kronosutil/log"
-	"github.com/rubrikinc/kronos/mock"
-	"github.com/rubrikinc/kronos/pb"
+	"github.com/elliotcourant/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/mock"
+	"github.com/elliotcourant/kronos/pb"
 )
 
 func TestSingleNodeKronos(t *testing.T) {

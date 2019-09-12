@@ -7,8 +7,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/rubrikinc/kronos/kronosutil"
-	"github.com/rubrikinc/kronos/pb"
+	"github.com/elliotcourant/kronos/kronosutil"
+	"github.com/elliotcourant/kronos/pb"
 )
 
 func stringToNodeAddr(addr string) *kronospb.NodeAddr {

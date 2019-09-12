@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/rubrikinc/kronos/pb"
+	"github.com/elliotcourant/kronos/pb"
 )
 
 func TestDriftingClockCheckInterval(t *testing.T) {

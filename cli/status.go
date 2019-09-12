@@ -14,8 +14,8 @@ import (
 	"github.com/cockroachdb/cockroach/pkg/util/log/logflags"
 	"github.com/spf13/cobra"
 
-	"github.com/rubrikinc/kronos/kronosutil"
-	"github.com/rubrikinc/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/kronosutil"
+	"github.com/elliotcourant/kronos/kronosutil/log"
 )
 
 const (

@@ -13,11 +13,11 @@ import (
 	"github.com/spf13/afero"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/rubrikinc/kronos/acceptance/chaos"
-	"github.com/rubrikinc/kronos/acceptance/cluster"
-	"github.com/rubrikinc/kronos/cli"
-	"github.com/rubrikinc/kronos/kronosutil"
-	"github.com/rubrikinc/kronos/pb"
+	"github.com/elliotcourant/kronos/acceptance/chaos"
+	"github.com/elliotcourant/kronos/acceptance/cluster"
+	"github.com/elliotcourant/kronos/cli"
+	"github.com/elliotcourant/kronos/kronosutil"
+	"github.com/elliotcourant/kronos/pb"
 )
 
 func TestKronosStatus(t *testing.T) {
@@ -28,7 +28,7 @@ func TestKronosStatus(t *testing.T) {
 	tc, err := cluster.NewCluster(
 		ctx,
 		cluster.ClusterConfig{
-			Fs: fs,
+			Fs:                       fs,
 			ManageOracleTickInterval: manageOracleTickInterval,
 			NumNodes:                 numNodes,
 			RaftSnapCount:            2,

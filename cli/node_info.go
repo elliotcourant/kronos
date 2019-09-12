@@ -5,10 +5,10 @@ import (
 	"context"
 	"sync"
 
-	"github.com/rubrikinc/kronos/kronoshttp"
-	"github.com/rubrikinc/kronos/kronosutil"
-	"github.com/rubrikinc/kronos/pb"
-	"github.com/rubrikinc/kronos/server"
+	"github.com/elliotcourant/kronos/kronoshttp"
+	"github.com/elliotcourant/kronos/kronosutil"
+	"github.com/elliotcourant/kronos/pb"
+	"github.com/elliotcourant/kronos/server"
 )
 
 type errMap map[string]error

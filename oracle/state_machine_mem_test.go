@@ -7,7 +7,7 @@ import (
 	"github.com/cockroachdb/cockroach/pkg/util/protoutil"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/rubrikinc/kronos/pb"
+	"github.com/elliotcourant/kronos/pb"
 )
 
 func TestSubmitProposal(t *testing.T) {

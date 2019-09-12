@@ -5,8 +5,8 @@ import (
 	"flag"
 	"os"
 
-	"github.com/rubrikinc/kronos/cli"
-	"github.com/rubrikinc/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/cli"
+	"github.com/elliotcourant/kronos/kronosutil/log"
 )
 
 func main() {

@@ -13,12 +13,12 @@ import (
 	"github.com/spf13/afero"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/rubrikinc/kronos/acceptance/cluster"
-	"github.com/rubrikinc/kronos/checksumfile"
-	"github.com/rubrikinc/kronos/kronosutil"
-	"github.com/rubrikinc/kronos/kronosutil/log"
-	"github.com/rubrikinc/kronos/metadata"
-	"github.com/rubrikinc/kronos/pb"
+	"github.com/elliotcourant/kronos/acceptance/cluster"
+	"github.com/elliotcourant/kronos/checksumfile"
+	"github.com/elliotcourant/kronos/kronosutil"
+	"github.com/elliotcourant/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/metadata"
+	"github.com/elliotcourant/kronos/pb"
 )
 
 const (
@@ -36,7 +36,7 @@ func TestKronosSanity(t *testing.T) {
 	tc, err := cluster.NewCluster(
 		ctx,
 		cluster.ClusterConfig{
-			Fs: fs,
+			Fs:                       fs,
 			ManageOracleTickInterval: manageOracleTickInterval,
 			NumNodes:                 numNodes,
 			RaftSnapCount:            2,
@@ -186,7 +186,7 @@ func TestKronosInsecureCluster(t *testing.T) {
 	tc, err := cluster.NewInsecureCluster(
 		ctx,
 		cluster.ClusterConfig{
-			Fs: fs,
+			Fs:                       fs,
 			ManageOracleTickInterval: manageOracleTickInterval,
 			NumNodes:                 numNodes,
 			RaftSnapCount:            2,
@@ -219,7 +219,7 @@ func TestKronosSanityReIP(t *testing.T) {
 	tc, err := cluster.NewCluster(
 		ctx,
 		cluster.ClusterConfig{
-			Fs: fs,
+			Fs:                       fs,
 			ManageOracleTickInterval: manageOracleTickInterval,
 			NumNodes:                 numNodes,
 			RaftSnapCount:            2,
@@ -272,7 +272,7 @@ func TestKronosSanityBackupRestore(t *testing.T) {
 	tc, err := cluster.NewCluster(
 		ctx,
 		cluster.ClusterConfig{
-			Fs: fs,
+			Fs:                       fs,
 			ManageOracleTickInterval: manageOracleTickInterval,
 			NumNodes:                 numNodes,
 			RaftSnapCount:            2,
@@ -369,7 +369,7 @@ func TestKronosSanityAddRemove(t *testing.T) {
 	tc, err := cluster.NewCluster(
 		ctx,
 		cluster.ClusterConfig{
-			Fs: fs,
+			Fs:                       fs,
 			ManageOracleTickInterval: manageOracleTickInterval,
 			NumNodes:                 numNodes,
 			RaftSnapCount:            2,

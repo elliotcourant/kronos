@@ -16,10 +16,10 @@ import (
 	"github.com/scaledata/etcd/pkg/types"
 	"github.com/scaledata/etcd/raft/sdraftpb"
 
-	"github.com/rubrikinc/kronos/kronosutil"
-	"github.com/rubrikinc/kronos/kronosutil/log"
-	"github.com/rubrikinc/kronos/metadata"
-	"github.com/rubrikinc/kronos/pb"
+	"github.com/elliotcourant/kronos/kronosutil"
+	"github.com/elliotcourant/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/metadata"
+	"github.com/elliotcourant/kronos/pb"
 )
 
 // supported HTTP URIs

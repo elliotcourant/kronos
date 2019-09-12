@@ -5,10 +5,10 @@ import (
 	"errors"
 	"time"
 
-	"github.com/rubrikinc/kronos/kronoshttp"
-	"github.com/rubrikinc/kronos/kronosstats"
-	"github.com/rubrikinc/kronos/kronosutil/log"
-	"github.com/rubrikinc/kronos/server"
+	"github.com/elliotcourant/kronos/kronoshttp"
+	"github.com/elliotcourant/kronos/kronosstats"
+	"github.com/elliotcourant/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/server"
 )
 
 var kronosServer *server.Server

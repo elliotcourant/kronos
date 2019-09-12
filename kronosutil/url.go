@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"path/filepath"
 
-	"github.com/rubrikinc/kronos/pb"
+	"github.com/elliotcourant/kronos/pb"
 )
 
 // NodeAddr converts address in host:port format to NodeAddr.

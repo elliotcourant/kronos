@@ -11,8 +11,8 @@ import (
 	"github.com/scaledata/etcd/raft/sdraftpb"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/rubrikinc/kronos/metadata"
-	"github.com/rubrikinc/kronos/pb"
+	"github.com/elliotcourant/kronos/metadata"
+	"github.com/elliotcourant/kronos/pb"
 )
 
 func TestWithProtocol(t *testing.T) {

@@ -25,12 +25,12 @@ import (
 	"github.com/cockroachdb/cockroach/pkg/util/randutil"
 	"github.com/cockroachdb/cockroach/pkg/util/syncutil"
 
-	"github.com/rubrikinc/kronos/acceptance/testutil"
-	"github.com/rubrikinc/kronos/kronosutil"
-	"github.com/rubrikinc/kronos/kronosutil/log"
-	"github.com/rubrikinc/kronos/metadata"
-	"github.com/rubrikinc/kronos/pb"
-	"github.com/rubrikinc/kronos/server"
+	"github.com/elliotcourant/kronos/acceptance/testutil"
+	"github.com/elliotcourant/kronos/kronosutil"
+	"github.com/elliotcourant/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/metadata"
+	"github.com/elliotcourant/kronos/pb"
+	"github.com/elliotcourant/kronos/server"
 )
 
 // We are using goreman to control the different kronos processes. goreman uses
@@ -744,13 +744,13 @@ func newCluster(ctx context.Context, cc ClusterConfig, insecure bool) (*TestClus
 	}
 
 	tc := &TestCluster{
-		CertsDir: certsDir,
-		fs:       cc.Fs,
-		ErrCh:    make(chan error),
+		CertsDir:                 certsDir,
+		fs:                       cc.Fs,
+		ErrCh:                    make(chan error),
 		ManageOracleTickInterval: cc.ManageOracleTickInterval,
-		Nodes:         make([]*testNode, cc.NumNodes),
-		procfile:      filepath.Join(testDir, procfile),
-		RaftSnapCount: cc.RaftSnapCount,
+		Nodes:                    make([]*testNode, cc.NumNodes),
+		procfile:                 filepath.Join(testDir, procfile),
+		RaftSnapCount:            cc.RaftSnapCount,
 	}
 	log.Infof(ctx, "Procfile: %v", tc.procfile)
 

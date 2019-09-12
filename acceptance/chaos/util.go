@@ -4,9 +4,9 @@ import (
 	"context"
 	"math/rand"
 
-	"github.com/rubrikinc/kronos/acceptance/cluster"
-	"github.com/rubrikinc/kronos/kronosutil/log"
-	"github.com/rubrikinc/kronos/pb"
+	"github.com/elliotcourant/kronos/acceptance/cluster"
+	"github.com/elliotcourant/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/pb"
 )
 
 func randomSubset(numNodes, numNodesToSelect int) []int {

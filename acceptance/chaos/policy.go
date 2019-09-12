@@ -6,8 +6,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/rubrikinc/kronos/acceptance/cluster"
-	"github.com/rubrikinc/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/acceptance/cluster"
+	"github.com/elliotcourant/kronos/kronosutil/log"
 )
 
 const (

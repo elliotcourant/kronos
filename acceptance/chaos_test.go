@@ -13,10 +13,10 @@ import (
 	"github.com/spf13/afero"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/rubrikinc/kronos/acceptance/chaos"
-	"github.com/rubrikinc/kronos/acceptance/cluster"
-	"github.com/rubrikinc/kronos/kronosutil"
-	"github.com/rubrikinc/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/acceptance/chaos"
+	"github.com/elliotcourant/kronos/acceptance/cluster"
+	"github.com/elliotcourant/kronos/kronosutil"
+	"github.com/elliotcourant/kronos/kronosutil/log"
 )
 
 const (

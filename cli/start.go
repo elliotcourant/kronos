@@ -14,11 +14,11 @@ import (
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc"
 
-	"github.com/rubrikinc/kronos/kronosutil/log"
-	"github.com/rubrikinc/kronos/oracle"
-	"github.com/rubrikinc/kronos/pb"
-	"github.com/rubrikinc/kronos/server"
-	"github.com/rubrikinc/kronos/tm"
+	"github.com/elliotcourant/kronos/kronosutil/log"
+	"github.com/elliotcourant/kronos/oracle"
+	"github.com/elliotcourant/kronos/pb"
+	"github.com/elliotcourant/kronos/server"
+	"github.com/elliotcourant/kronos/tm"
 )
 
 const (
@@ -228,7 +228,7 @@ func runStart() {
 		clock = tm.NewMonotonicClock()
 	}
 	config := server.Config{
-		Clock: clock,
+		Clock:                    clock,
 		ManageOracleTickInterval: startCtx.manageOracleTickInterval,
 		OracleTimeCapDelta:       startCtx.oracleTimeCapDelta,
 		RaftConfig: &oracle.RaftConfig{
